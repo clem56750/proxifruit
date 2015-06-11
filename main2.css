@@ -192,10 +192,10 @@ footer {
   color:rgb(193,0,123);
 }
 .cerises{
-  background-image: url("upload/cerise.jpg");
+  background-image: url("upload/cerise1.jpg");
 }
 .framboises{
-  background-image: url("upload/framboise.jpg");
+  background-image: url("upload/framboise1.jpg");
 }
 .chou{
   background-image: url("upload/chou.jpg");
@@ -204,10 +204,10 @@ footer {
   background-image:url("upload/poivron.jpg");
 }
 .carambole{
-  background-image: url("upload/carambole.jpg");
+  background-image: url("upload/carambole1.jpg");
 }
 .raisin{
-  background-image: url("upload/raisin.jpg");
+  background-image: url("upload/raisin1.jpg");
 }
 
 .cerises,.framboises,.chou,.poivron,.carambole,.raisin{

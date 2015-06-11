@@ -5,7 +5,7 @@ echo "<meta charset='utf-8'>";
 
 
 	try {
-	$bdd = new PDO("mysql:host=sql313.byethost31.com; dbname=b31_16315158_proxifruit; charset=utf8" , "b31_16315158" , "isep2015", array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+	$bdd = new PDO("mysql:host=localhost; dbname=proxifruit; charset=utf8" , "root" , " ", array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
 	}
 	catch(Exception $e) {
 		die("Erreur :".$e -> getMessage());

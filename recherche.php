@@ -19,7 +19,7 @@
 
 
   try {
-    $bdd = new PDO("mysql:host=sql313.byethost31.com; dbname=b31_16315158_proxifruit; charset=utf8" , "b31_16315158" , "isep2015", array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+    $bdd = new PDO("mysql:host=localhost; dbname=proxifruit; charset=utf8" , "root" , " ", array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
   }
   catch(Exception $e) {
     die("Erreur :".$e -> getMessage());
@@ -128,7 +128,7 @@ google.maps.event.addDomListener(window, 'load', initialiserCarte);
         if(isset($_SESSION['usermail']) AND isset($_SESSION['password'])) {
           echo "<li><a href='monPanier.php'>Mon panier</a></li>";
           try {
-              $bdd = new PDO("mysql:host=sql313.byethost31.com; dbname=b31_16315158_proxifruit; charset=utf8" , "b31_16315158" , "isep2015");
+              $bdd = new PDO("mysql:host=localhost; dbname=proxifruit; charset=utf8" , "root" , " ");
           }
           catch(Exception $e) {
               die("Erreur :".$e -> getMessage());
@@ -173,7 +173,7 @@ google.maps.event.addDomListener(window, 'load', initialiserCarte);
                       <select name="category">
                         <?php
                           try {
-                            $bdd = new PDO("mysql:host=sql313.byethost31.com; dbname=b31_16315158_proxifruit; charset=utf8" , "b31_16315158" , "isep2015", array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+                            $bdd = new PDO("mysql:host=localhost; dbname=proxifruit; charset=utf8" , "root" , " ", array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
                           }
                           catch(Exception $e) {
                             die("Erreur :".$e -> getMessage());

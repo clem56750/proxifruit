@@ -3,7 +3,7 @@
 	session_start();
 
 	try {
-		$bdd = new PDO("mysql:host=sql313.byethost31.com; dbname=b31_16315158_proxifruit; charset=utf8" , "b31_16315158" , "isep2015");
+		$bdd = new PDO("mysql:host=localhost; dbname=proxifruit; charset=utf8" , "root" , " ");
 	}
 	catch(Exception $e) {
 		die("Erreur :".$e -> getMessage());
