@@ -1,0 +1,672 @@
+* {-moz-box-sizing: border-box; box-sizing: border-box;}
+
+
+/*couleurs / type de police et tailles*/
+
+body{
+  background-color: rgb(107,3,40);
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.fonddepage{
+  background-color: #FFFFCC;
+  padding-left:1%;
+  padding-right: 1%;
+
+}
+nav{
+  font-family: arial;
+  font-size: 12px;
+}
+.sloganaccueil{
+  font-family: Comic Sans MS, Trebuchet MS, arial, sans-serif;
+  font-size: 15px;
+  color : rgb(0,72,0);
+}
+.slogan{
+  font-family: Comic Sans MS, Trebuchet MS, arial, sans-serif;
+  font-size: 12px;
+  color : rgb(0,72,0);
+}
+.menugauche, .menudroite{
+  font-family: arial, sans-serif;
+  font-size: 15px;
+  color: black;
+}
+.menu{
+  font-size: 22px;
+}
+
+.offres{
+  font-family: Arial, sans-serif;
+}
+footer{
+  font-family: Arial Black, Arial, sans-serif;
+  font-size: 14px;
+  color : rgb(6,74,34);
+}
+
+/*navigation,header et footer*/
+
+.navhautbanniere{ 
+    z-index: 1;
+    position: fixed;
+    width:78.4%;
+    top: 0%;
+    font-size: 1em;
+    background-color: rgb(107,3,40); 
+    background-color: rgba(107,3,40,0.8);
+    color: white;
+    padding:0.6%;
+}
+.inscriptionconnexion{
+  background-color:rgba(0,120,0,0.7);
+  display: inline;
+}
+nav li , footer li {
+  display:inline;
+  margin-left:0.3%;
+  margin-right:0.3%;
+  padding: 0.8%;
+}
+nav li a , footer li a {
+    display:inline;
+    font-weight: bold;
+    color:white;
+    text-decoration : none;
+    padding:0.8%;
+}
+
+nav li a:hover, nav li a:focus {
+    text-decoration: none;
+    background-color: rgb(107,3,40);
+}
+.inscriptionconnexion a:hover {
+  text-decoration: none;
+  background-color: rgb(0,120,0);
+}
+footer li a:hover , footer li a:focus{
+  text-decoration: none;
+  color: rgb(0,100,0);
+}
+.banniere {   /*fond écran cerises*/
+    background-image : url('http://img1.mxstatic.com/wallpapers/41a89856e0366031efec6771f0eed561_large.jpeg');
+    height : 800px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 1%;
+    margin-bottom : 3%;
+    float : both;
+}
+header{  /*banniere cerises réduite*/
+    background-image : url('http://img15.hostingpics.net/pics/249290bannierecerise2.jpg');
+    height : 400px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 1%;
+    margin-bottom : 3%;
+    float : both;
+
+}
+.logoaccueil{
+  position:absolute;
+  top:13%;
+  left:16%;
+  display:inline-block;
+  height:10%;
+  width:20%;
+}
+.logo{
+  position:absolute;
+  top:39%;
+  left:72%;
+  display:inline-block;
+  height:5%;
+  width:10%;
+}
+
+.sloganaccueil{
+  position : absolute;
+  top:22%;
+  left:-7%;
+  margin-left:20%;
+  font-weight: bold;
+}
+.slogan{
+  position : absolute;
+  top:43%;
+  left:46%;
+  margin-left:20%;
+  font-weight: bold;
+}
+
+footer {
+  background-color: black;
+  text-align : center;
+  padding : 1%;
+  clear : both;
+}
+
+/*menus gauche et droite*/
+
+.menugauche, .menudroite {
+  z-index: 4;
+  text-align: center;
+  border : 1px solid white;
+  border-color: rgb(248,226,181);
+  border-radius: 30px;
+  width:20%;
+  margin-left:2%;
+  margin-right: 2%;
+  background-color: black;
+}
+.geolocalisation, .menudroite, .menugauche{
+  display: inline-block;
+}
+.menugauche{
+  float:left;
+}
+.menudroite{
+  float:right;
+}
+.menugauche p, .menugauche a, .menudroite p, .menudroite a {
+  display:block;
+  line-height: 1050%;
+  margin:0px;
+
+  text-decoration: none;
+  font-weight : bold;
+}
+
+.menugauche p, .menudroite p {
+  text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
+}
+
+.menugauche a, .menudroite a {
+  text-shadow: #FFF 0.5px 0.5px, #FFF -0.5px 0.5px, #FFF -0.5px -0.5px, #FFF 0.5px -0.5px;
+  }
+
+.menugauche a:hover,.menudroite a:hover{
+  color:rgb(193,0,123);
+}
+.cerises{
+  background-image: url("upload/cerise.jpg");
+}
+.framboises{
+  background-image: url("upload/framboise.jpg");
+}
+.chou{
+  background-image: url("upload/chou.jpg");
+}
+.poivron{
+  background-image:url("upload/poivron.jpg");
+}
+.carambole{
+  background-image: url("upload/carambole.jpg");
+}
+.raisin{
+  background-image: url("upload/raisin.jpg");
+}
+
+.cerises,.framboises,.chou,.poivron,.carambole,.raisin{
+  color:white;
+}
+
+
+/*Boutons "voir les offres" et "faire une offre"*/
+
+h2 a{
+  color:white;
+  text-align: center;
+  background-color: rgb(248,226,181);
+  text-decoration:none;
+  display:inline-block;
+  height: 40px;
+  width:16%;
+  background-color:rgb(160,8,62);
+  font-family: Garamond, arial;
+  font-size: 20px;
+  padding-top:7px;
+  border: 2px solid rgb(107,3,40);
+  border-radius:10px;
+}
+
+.voiroffre{
+  font-size: 1em;
+  color: rgb(107,3,40);
+  font-family: Comic Sans MS, Trebuchet MS,arial,sans-serif;
+}
+
+.voiroffre:hover{
+  color: white;
+}
+h2 a:hover{
+  background-color: rgb(107,3,40);
+  color:rgb(217,180,193);
+}
+
+.menugauche h4, .menudroite h4 { /* titres au dessus des images sur les menus */
+  text-decoration: none;
+  font-family: Arial black, arial, serif;
+  color: white;
+  padding:3%;
+}  
+/*présentation proxifruit paragraphe*/
+.proxifruit{
+  margin-left:26%;
+  margin-right:26%;
+  text-align: justify;
+  border-radius: 10px;
+}
+
+
+.proxifruit a{
+  color:black;
+}
+.proxifruit a:hover{
+  color:rgb(0,100,0);
+  text-decoration: none;
+}
+/*geolocalisation*/
+#carteGoogle {
+    width:100%;
+    height:45em;
+    border:1px solid #efefef;
+    -moz-box-shadow:5px 5px 10px #000;
+    -webkit-box-shadow:5px 5px 10px #000;
+    margin : auto;
+    margin-top : 2%;
+    margin-bottom : 15%;
+}
+
+
+/*Suggestions d'offres carrousel*/
+#carrousel{
+  position:relative;
+  height:600px;
+  width:580px;
+  margin: auto;
+}
+#carrousel ul li{
+    list-style-type:none;
+    position:absolute;
+    top:0;
+    left:0;
+}
+
+.espace1{
+  height: 5em;
+}
+
+.elementC{
+  display:inline-block;
+  height:400px;
+  width:500px;
+  margin-left:4%;
+  margin-right:4%;
+  margin-top:2%;
+  margin-bottom:2%;
+}
+.elementC a{
+  text-decoration: none;
+  color:grey;
+  font-family:arial,serif;
+}
+.elementC a:hover{
+  color:grey;
+}
+.elementC h4{
+  font-family: garamond,arial,serif;
+  font-size: 25px;
+}
+.prev{
+  position:absolute;
+  bottom:300px;
+  left:-20px;
+}
+.next{
+  position:absolute;
+  bottom:300px;
+  right:20px;
+
+}
+
+.premier {
+    padding:1px;
+    text-align : center;
+    background-color:rgb(12,40,12);
+    color:white;
+}
+.deuxieme {
+    display:inline-block;
+    padding:0%;
+    margin:0%;
+    width:100%;
+    padding-top: 35%;
+    color:white;
+}
+
+.deuxieme p {
+  font-family: arial ,serif;
+  font-size:15px;
+  padding:0%;
+  margin-left : 5%;
+}
+.fondnoirtransparent{
+  background-color: rgba(0,0,0,0.8);
+  display: block;
+  height:50%;
+}
+
+
+
+/*FAQ et "a propos de proxifruit"*/
+.ancres{
+  font-family:arial,sans-serif;
+  text-decoration: none;
+  background-color:rgb(248,226,181);
+  padding:2%;
+  border: 1px solid rgb(80,0,30);
+  border-radius:10px;
+}
+.ancres h4{
+  color:rgb(80,0,30);
+}
+.ancres a{
+  text-decoration: none;
+  display:block;
+  color:rgb(195,14,81);
+}
+.ancres a:hover{
+  color:rgb(80,0,30);
+  text-decoration: underline;
+}
+
+
+.titres {
+  font-family: arial;
+  font-size: 20;
+  margin-top:10%;
+  color:rgb(0,55,0);
+}
+
+.questions {
+  font-family: trebuchet ms, comic sans ms, arial, serif;
+  font-size: 18px;
+  color:rgb(0,80,0);
+}
+
+.reponses {
+  font-family: comic sans ms, arial, serif;
+  font-size: 16px;
+}
+
+
+/* recherche */
+
+
+.rechercheavancee {
+  text-align : right;
+  margin : 2%;
+  font-size : 20px;
+  clear : both;
+}
+
+
+
+
+.bouton {
+  display: inline;
+  float: right;
+  margin-top: 15px;
+  margin-right: 10px;
+  border: 1px solid black; 
+  border-radius:5px; 
+  text-align:center; 
+  box-shadow:0 0 6px;
+  background-color : #009933;
+  color:white;
+}
+
+.bouton1 {
+  display: inline;
+  float: right;
+  margin-top: 10px;
+  margin-right: 10px;
+  border: 1px solid black; 
+  border-radius:5px; 
+  text-align:center; 
+  box-shadow:0 0 6px;
+  background-color : orange;
+  color:black;
+}
+
+
+.picture {
+  width: 200px; 
+  height: 200px; 
+  border: 1px solid black;
+}
+
+.offre {
+  border: 1px solid black; 
+  height: 29em;
+}
+
+.offre1 {
+    border: 1px solid black; 
+  height: 25em;
+}
+
+.membre {
+  border: 1px solid black; 
+  height: 18em; 
+  padding: 2%;
+  margin: 2%;
+}
+
+.profil, .pass, .eval {
+border: 1px solid black; 
+padding-bottom: 3%; 
+padding-left: 2%;
+margin: 2%;
+
+}
+
+.profil {
+  height: 29em;
+}
+
+.pass {
+  height: 13em;
+}
+
+
+.droite {
+  text-align: right;
+  margin-right:10px;
+}
+
+.pictureEval {
+  width: 100px; 
+  height: 140px; 
+  border: 1px solid black;
+}
+
+.recette {
+  text-align: center;
+}
+
+.section .col-md-4, .section .col-md-6 {
+    border : 2px solid rgb(107,3,40);
+    padding : 1%;
+    margin : 1%;
+    margin-bottom : 4%;
+    width: 45em;
+}
+
+.section a, #rechercheavancee {
+  text-decoration: none;
+  color: brown;
+  font-weight: bold;
+}
+
+.cadre{
+  margin-left:26%;
+  margin-right:26%;
+  text-align: justify;
+  border-radius: 10px;
+  border: 1px solid black;
+  height: 12em;
+  margin-bottom: 7%;
+  padding-top: 1%;
+  width: 41em;
+
+}
+
+.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    float: left;
+}
+
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.col-md-1 {
+width: 8.33333333%;
+}
+
+.col-md-2 {
+    width: 16.66666667%;
+}
+
+.col-md-3 {
+    width: 25%;
+}
+
+.col-md-4 {
+    width: 33.33333333%;
+}
+
+.col-md-5 {
+    width: 41.66666667%;
+}
+
+.col-md-6 {
+    width: 50%;
+}
+
+.col-md-7 {
+    width: 58.33333333%;
+}
+
+.col-md-8 {
+    width: 66.66666667%;
+    height : 170%;
+}
+
+.col-md-9 {
+    width: 75%;
+}
+
+.col-md-10 {
+    width: 83.33333333%;
+}
+
+.col-md-11 {
+    width: 91.66666667%;
+}
+
+.col-md-12 {
+    width: 100%;
+}
+
+h3 {
+    text-align : center;
+    margin-top : 5%;
+    font-weight : bold;
+    color: black;
+    float : both;
+    font-size : 25px;
+
+}
+
+.rating {
+      width: 226px;
+      margin: 0 auto 1em;
+      font-size: 45px;
+      overflow:hidden;
+    }
+
+.rating input {
+  float: right;
+  opacity: 0;
+  position: absolute;
+}
+    .rating a, .rating label {
+      float:right;
+      color: #aaa;
+      text-decoration: none;
+      -webkit-transition: color .4s;
+      -moz-transition: color .4s;
+      -o-transition: color .4s;
+      transition: color .4s;
+    }
+
+.rating label:hover ~ label, .rating input:focus ~ label, .rating label:hover, .rating a:hover, .rating a:hover ~ a, .rating a:focus, .rating a:focus ~ a   {
+      color: orange;
+      cursor: pointer;
+    }
+
+    .rating2 {
+      direction: rtl;
+    }
+
+    .rating2 a {
+      float:none
+    }
+
+    /*carte localisation recherche*/
+#map-canvas {
+    width : 100%;
+    height : 30em;
+    border: 1px solid #efefef;
+    margin : auto;
+    border-color: black;
+    box-shadow:5px 5px 10px #000;
+    box-shadow:5px 5px 10px #000;
+  }
+
+  #adresse {
+    width : 89%;
+    height : 30px;
+  }
+
+
+  .thumbnail {
+    display: block;
+    padding-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 1px solid black;
+    height: 6em;
+}
+
+.planDuSite {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    float: left;
+    width: 33.33333333%;
+}
+
+
